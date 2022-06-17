@@ -15,8 +15,51 @@ body {
   font-family: 'lexend Deca';
   font-size: 15px;
   background-color: var(--Very-light-gray);
-  padding: 80px 20px;
+  padding: 30px 20px;
+  min-height: 110vh;
 }
+
+.stage {
+    margin: auto;
+}
+
+.a {
+    text-decoration: none;
+    color: var(--Bright-orange);
+}
+
+
+.button-flex, .button-grid {
+    font-size: 30px;
+    font-family: 'lexend deca';
+    background-color: var(--Very-light-gray);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    /* margin-top: 30px; */
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.button-flex:hover {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  cursor: pointer;
+  padding: 12px 26px;
+  transition: .5s;
+}
+
+.button-grid:hover {
+  background-color: var(--Dark-cyan);
+  color: var(--Very-light-gray);
+  border: 2px solid var(--Very-light-gray);
+  cursor: pointer;
+  padding: 12px 26px;
+  transition: .5s;
+}
+
+
 
 .info-sedans, .info-suvs, .info-luxury {
   color: var(--Transparent-white);
@@ -99,6 +142,18 @@ button {
 
 
 @media only screen and (min-width: 480px) {
+  body {
+      max-height: 100vh;
+  }
+
+  .stage {
+      margin-top: 0;
+      padding-left: 180px;
+  }
+
+  .button-grid {
+      margin-left: 670px;
+  }
 
   main {
     margin: auto;
